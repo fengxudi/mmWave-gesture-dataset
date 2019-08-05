@@ -1,0 +1,6 @@
+name		SSH
+envir		all
+position	center
+dist		short
+other fea	/
+comments	test_SSH的顺序是pure，table，hand

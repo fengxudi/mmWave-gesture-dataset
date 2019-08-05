@@ -1,0 +1,6 @@
+name		CY
+envir		pure, table
+position	center
+dist		short
+other fea	/
+comments	/

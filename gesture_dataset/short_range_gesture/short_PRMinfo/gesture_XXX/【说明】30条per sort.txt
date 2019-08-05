@@ -1,0 +1,6 @@
+name		XXX
+envir		all
+position	center
+dist		short
+other fea	/
+comments	/

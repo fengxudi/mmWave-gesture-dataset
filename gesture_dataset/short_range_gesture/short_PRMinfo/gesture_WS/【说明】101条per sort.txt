@@ -1,0 +1,6 @@
+name		WS
+envir		all
+position	center
+dist		short
+other fea	/
+comments	/

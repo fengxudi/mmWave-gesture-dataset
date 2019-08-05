@@ -1,0 +1,6 @@
+name		DZZ
+envir		hand
+position	center
+dist		short
+other fea	/
+comments	作为训练集与测试集均可
