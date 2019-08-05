@@ -1,10 +1,10 @@
 # mmWave-gesture-dataset
 
-![title](readmePics/title.png)
-![overview](readmePics/overview.png)
-![PRM](readmePics/PRM.png)
+
 
 # OVERVIEW
+
+![overview](readmePics/overview.png)
 
 This dataset is the first mmWave gesture dataset so far and it has several advantages:   
 * 2 scenarios: short range (i.e. Human-Radar Distance(HRD) < 0.5 m) and long range (i.e. 2m < HRD < 5m);   
