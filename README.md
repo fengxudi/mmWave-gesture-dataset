@@ -7,11 +7,11 @@
 # OVERVIEW
 
 This dataset is the first mmWave gesture dataset so far and it has several advantages:   
-(i) 2 scenarios: short range (i.e. Human-Radar Distance(HRD) < 0.5 m) and long range (i.e. 2m < HRD < 5m);   
-(ii) large amount and long last time: 56,420 traces, with 1,357 minutes in total;   
-(iii) scores of people: 144 people (including 64 men and 80 women);   
-(iv) various types of gesture data: not merely PRM information, but also some raw signal data, raw Range-Doppler images and SEP’s cloud.   
-(v) extensive study: not merely directly sensing, but also sensing with certain blockages (e.g. paper, corrugated paper, metal board).
+1.  2 scenarios: short range (i.e. Human-Radar Distance(HRD) < 0.5 m) and long range (i.e. 2m < HRD < 5m);   
+2.  large amount and long last time: 56,420 traces, with 1,357 minutes in total;   
+3.  scores of people: 144 people (including 64 men and 80 women);   
+4.   various types of gesture data: not merely PRM information, but also some raw signal data, raw Range-Doppler images and SEP’s cloud.   
+5.   extensive study: not merely directly sensing, but also sensing with certain blockages (e.g. paper, corrugated paper, metal board).
 
 ## Short range scenario
 Specifically, in the short range scenario, the same with M-Gesture, we invited 131 people (including 60 men and 71 women) to perform five groups of gestures, 30,360 traces in total. Not only the predesignated gestures but numbers of unexpected motions are provided, e.g. fingers’ motions and English letters’ writing. 
