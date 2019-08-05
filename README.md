@@ -14,6 +14,8 @@ This dataset is the first mmWave gesture dataset so far and it has several advan
 * extensive study: not merely directly sensing, but also sensing with certain blockages (e.g. paper, corrugated paper, metal board).
 
 ## Short range scenario
+
+![short](readmePics/short.png)
 Specifically, in the short range scenario, the same with M-Gesture, we invited 131 people (including 60 men and 71 women) to perform five groups of gestures, 30,360 traces in total. Not only the predesignated gestures but numbers of unexpected motions are provided, e.g. fingers’ motions and English letters’ writing. 
 
 This dataset has been separated into 4 parts as following:   
@@ -46,6 +48,8 @@ These eigenvalues conclude the detected points' overall variation trend, e.g. to
   * **Form**: short_raw_`id`_ `sort`_ `number`.mat, where `id` represents the id number of each volunteer, `sort` represents the class name of different gestures (i.e. 'knock’, 'lswipe’, 'rswipe’, 'clock’, 'anticlock’, 'finger_rub’, 'finger_slide’, 'hit_finger’, 'pinch_index’, 'pinch_pinky’ and 'unex’), `number` represents the sequence number of each gesture.  
 
 ## Long range scenario
+
+![long](readmePics/long.png)
 
 In the long range scenario, we invited 100 people (including 44 men and 56 women) to perform the same five gestures (i.e. left swiping, right swiping, knocking, rotating and some unexpected motions), 26,060 traces in total.
 
