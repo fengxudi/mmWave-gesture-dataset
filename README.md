@@ -13,7 +13,7 @@ This dataset is the first mmWave gesture dataset so far and it has several advan
 Specifically, in the short range scenario, the same with M-Gesture, we invited 131 people (including 60 men and 71 women) to perform five groups of gestures, 30,360 traces in total. Not only the predesignated gestures but numbers of unexpected motions are provided, e.g. fingers’ motions and English letters’ writing. 
 
 This dataset has been separated into 4 parts as following:   
-* M-Gesture’s training and validating dataset  
+* Eigenvalue squences (M-Gesture’s training and validating dataset)   
 Gestures are transformed by 10 eigenvalues which is same as the PRM's in M-Gesture.
 These eigenvalues conclude the detected points' overall variation trend, e.g. total number, velocity, distance and angle of arrival.  
   * **Folder**: /gesture_dataset/short_range_gesture/short_PRMinfo
