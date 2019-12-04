@@ -60,6 +60,7 @@ Point cloud are the detected points with their spatial location, velocities and 
   * **Gesture class**: 'knock’, 'lswipe’, 'rswipe’, 'rotate’ and 'unex’. All of them are shown in the example demonstrations.  
   * **Form**: long_point_`id`_ `sort`.csv, where `id` represents the id number of each volunteer, `sort` represents the class name of different gestures (i.e. 'knock’, 'lswipe’, 'rswipe’, 'rotate’ and 'unex’).  
   * **Data structure**: The data structure of each gesture is 7* n, where n is various with frames and 7 are 'frame id’, 'detected points in each frame’, 'x coordinate of each point’, 'y coordinate of each point’, 'z coordinate of each point’, 'velocity of each point’ and 'reflection intensity of each point’. In each '.csv’ file, there are at least 50 gesture, and these gestures can be divided by a large interval between each two of them.
+  * **Notice**: Each individual CSV file contains multiple actions for the same gesture, separated by the lost frames larger than 10.
 
   
 * Raw signal data    
@@ -67,6 +68,7 @@ Point cloud are the detected points with their spatial location, velocities and 
   * **Containing**: 10 people (4 men and 6 women) which perform the same 4 gestures for 50 times.  
   * **Gesture class**: 'knock’, 'lswipe’, 'rswipe’, 'rotate’ and 'unex’. All of them are shown in the example demonstrations.  
   * **Form**: long_raw_`id`_ `sort`_ `number`.mat, where `id` represents the id number of each volunteer, `sort` represents the class name of different gestures (i.e. 'knock’, 'lswipe’, 'rswipe’, 'rotate’ and 'unex’), `number` represents the sequence number of each gesture.  
+  * **Data structure**: The data structure of each gesture is 512* 2* 5* 100, where 512 is the range bins, 2 is the id of receiving antenna, 5 is the doppler bins, and 100 is the frame id.
   
 # Example demonstration
 Before performing gestures, volunteers are asked to watch the example demonstrations of each gesture and the example demonstrations are available in the folder "`/gesture_dataset`".
