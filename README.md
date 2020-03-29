@@ -45,7 +45,7 @@ In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 76-GHz to 
 ![module1](readmePics/module1.png)![module2](readmePics/module2.png)
 
 Since the gestures we recorded were completed in two scenarios, we set different parameters for the radar for different scenes as follows:
-|  | short range | long range |
+| Radar parameters | short range | long range |
 | ----- | ----- | ----- |
 | Rx channels | 4 | 4 |
 | Tx channels | 2 | 3 |
@@ -55,7 +55,7 @@ Since the gestures we recorded were completed in two scenarios, we set different
 | frame periodicity | 55 ms | 100 ms |
 | dynamic point detection | CFAR-CA | CFAR-CASO |
 | point energy threshold | 1200 dB | 1280 dB |
-![params](readmePics/params.png)
+
 
 ## Short range scenario
 
