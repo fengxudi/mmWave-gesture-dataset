@@ -2,7 +2,7 @@
 
 
 
-# Overview
+# OVERVIEW
 
 ![overview](readmePics/overview.png)
 
@@ -12,6 +12,33 @@ This dataset is the first mmWave gesture dataset so far and it has several advan
 * scores of people: 144 people (including 64 men and 80 women);   
 * various types of gesture data: not merely PRM information, but also some raw signal data, raw Range-Doppler images and SEP’s cloud.   
 * extensive study: not merely directly sensing, but also sensing with certain blockages (e.g. paper, corrugated paper, metal board).
+
+Following we introduce the theroy principle of mmWave radar, the advantages of mmWave sensing, and the implementation details of this dataset.
+
+# RADAR PRINCIPLE
+
+We capture human gestures by utilizing FMCW (frequency modulated continuous wave) signals which is a mature method in the field of radar detection. It has unique properties to obtain information about reflection points, such as their position and velocity. Therefore, it can record the change patterns of different gestures by converting the signals reflected at different positions of the hand into motion information in three-dimensional space. Specifically, the FMCW signal can obtain the distance of the reflector from the radar by mixing the received signal, then analyze the phase change of the signal of the point at that distance to obtain the speed of this point. Finally, the angle information is obtained by the phase difference between the reflected signal at different two-dimensional Rxs.
+
+# ADVANTAGES of MMWAVE
+
+## Potential in 5G era
+
+As we all know, the emerging 5G technology is based on mmWave frequency bands. Due to its short wavelength, mmWaves have the following two advantages when sensing the surrounding environment: high-precision (cm-level ranging ability) and fine sensitivity (can monitor movements at the fractional millimeter level). Based on these advantages, the current work not only "sees" the indoor wall structure through a 5G commercial network card, but also "recognizes" different human movements through a specific FMCW radar.
+It is exciting that the recent smartphone Google Pixel4 has been equipped with a mmWave FMCW radar module to implement relatively simple gestures "in air" to control music players and other functions. This means that this function is gradually showing the powerful capabilities of mmWave signals in addition to high-speed transmission in the 5G era. However, according to the current research, there are still some problems that need to be solved urgently, such as concurrent gestures and power consumption.
+
+## "See-through" ability
+
+The millimeter wave can be used when blocking by nonconductor materials (such as cloth or plastic), which is determined by the nature of the mmWave. Because when the signal penetrates these objects, these materials will only change the amplitude of the signal and consume its energy, and will not affect the signal change pattern that records a certain action. In other words, the blocking of these materials will not affect the ability of the mmWave to capture action, when a certain signal strength is guaranteed. In addition, compared to cameras with similar recognition accuracy and infrared 3D structured light, mmWave is deficient of fine-grained imaging of the detected objects, thereby protecting personal privacy and safe use. Furthermore, compared with the recognition technology of sound wave, ultrasonic wave and Wi-Fi frequency band, mmWave FMCW radar has more accurate detection ability, so that it can recognize more delicate human actions.
+
+## Free to the effect of surroundings
+
+Compared with sonic, ultrasonic wave and Wi-Fi frequency band signals, it is convenient for mmWave signal to eliminate the adverse effects of static objects in the surrounding environment. 
+First of all, there is no need to worry about the reflection of static objects: because the FMCW reflected signal of static objects after mixing, its influence is a constant frequency that does not change with time, so it is easy to be eliminated by simple subtraction of adjacent time slices. eliminate. 
+Secondly, also no need to worry about the signal effects caused by multiple-time reflections: based on the common sense of optoelectronic physics, the attenuation of electromagnetic waves on the propagation path is proportional to the square of its transmission distance. Therefore, its energy intensity will be severely reduced, after the reflection signal of a dynamic object is reflected by the static object multiple times, not to mention that each reflection of the signal will also cause serious energy attenuation (especially for the mmWaves). As a result, these very weak "multipath reflections" are convenient to be submerged by general noises. To ensure the exclusion, we also applied the mature CFAR-CASO algorithm in the field of signal processing to filter the weak effects of multi-path reflections.
+
+# DATASET IMPLEMENTATION
+
+In this mmWave gesture dataset, we utilize the TI-IWR443 BOOST millimeter-wave radar. Since the gestures we recorded were completed in two scenarios, we set different parameters for the radar for different scenes, which will be introduced following.
 
 ## Short range scenario
 
