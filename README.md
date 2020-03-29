@@ -40,8 +40,6 @@ Secondly, also no need to worry about the signal effects caused by multiple-time
 
 In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 76-GHz to 81-GHz mmWave sensor evaluation module. Since the gestures we recorded were completed in two scenarios, we set different parameters for the radar for different scenes, which will be introduced following.
 
-![module1](readmePics/module1.png)![module2](readmePics/module2.png)
-
 ## Short range scenario
 
 ![short](readmePics/short.png)
