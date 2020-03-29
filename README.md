@@ -38,7 +38,7 @@ Secondly, also no need to worry about the signal effects caused by multiple-time
 
 # DATASET IMPLEMENTATION
 
-In this mmWave gesture dataset, we utilize the TI-IWR443 BOOST millimeter-wave radar. Since the gestures we recorded were completed in two scenarios, we set different parameters for the radar for different scenes, which will be introduced following.
+In this mmWave gesture dataset, we utilize the TI-IWR1443 single-chip 76-GHz to 81-GHz mmWave sensor evaluation module. Since the gestures we recorded were completed in two scenarios, we set different parameters for the radar for different scenes, which will be introduced following.
 
 ## Short range scenario
 
