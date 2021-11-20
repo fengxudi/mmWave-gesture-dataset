@@ -116,3 +116,6 @@ Point cloud are the detected points with their spatial location, velocities and 
   
 # Example demonstration
 Before performing gestures, volunteers are asked to watch the example demonstrations of each gesture and the example demonstrations are available in the folder "`/gesture_dataset`".
+
+# How to Cite?
+H. Liu et al., "M-Gesture: Person-Independent Real-Time In-Air Gesture Recognition Using Commodity Millimeter Wave Radar," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2021.3098338.
